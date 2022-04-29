@@ -1,0 +1,8 @@
+main: net.example.templateplugin.PaperKotlinTemplate
+name: paper-kotlin-template
+version: 0.1.0
+description: Your plugin description here
+api-version: 1.18 # Change to match Minecraft major version
+author: authorName  # [author1, author2] is also allowed
+website: someWebsiteHere
+prefix: PaperKotlinTemplate # Prefix shown in logged messages

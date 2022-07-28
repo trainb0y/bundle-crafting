@@ -1,8 +1,8 @@
-main: net.example.templateplugin.PaperKotlinTemplate
-name: paper-kotlin-template
+main: io.github.trainb0y.bundlecrafting.BundleCrafting
+name: BundleCrafting
 version: 0.1.0
-description: Your plugin description here
-api-version: 1.19 # Change to match Minecraft major version
-author: authorName  # [author1, author2] is also allowed
-website: someWebsiteHere
-prefix: PaperKotlinTemplate # Prefix shown in logged messages
+description: Allows crafting of Bundles
+api-version: 1.19
+author: trainb0y
+website: https://github.com/trainb0y/bundle-crafting
+prefix: BundleCrafting # Prefix shown in logged messages

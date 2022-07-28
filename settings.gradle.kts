@@ -1,2 +1,2 @@
-rootProject.name = "template-plugin"
+rootProject.name = "bundle-crafting"
 

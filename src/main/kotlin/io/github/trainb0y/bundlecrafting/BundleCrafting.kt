@@ -4,25 +4,21 @@ import org.bukkit.Bukkit
 import org.bukkit.Material
 import org.bukkit.NamespacedKey
 import org.bukkit.inventory.ItemStack
+import org.bukkit.inventory.ShapedRecipe
 import org.bukkit.inventory.ShapelessRecipe
 import org.bukkit.plugin.java.JavaPlugin
 
 @Suppress("Unused")
 class BundleCrafting: JavaPlugin() {
-
 	override fun onEnable() {
 		Bukkit.getServer().addRecipe(
-			ShapelessRecipe(
+			ShapedRecipe(
 				NamespacedKey(this, "bundle-recipe"),
 				ItemStack(Material.BUNDLE)
-			).apply {
-				listOf(
-					Material.LEATHER,
-					Material.RABBIT_HIDE,
-					Material.RABBIT_HIDE,
-					Material.RABBIT_HIDE,
-					Material.RABBIT_HIDE
-				).forEach { addIngredient(it) }
+			).apply{
+				shape("srs","r r","rrr")
+				setIngredient('s', Material.STRING)
+				setIngredient('r', Material.RABBIT_HIDE)
 			}
 		)
 	}
